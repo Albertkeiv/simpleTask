@@ -6,8 +6,14 @@
 <title>SimpleAgile</title> 
 </head>
 <body>
-<?php 
-include("template/menu.php"); 
+<?php
+if (!empty($_COOKIE['user'])) {
+    include('template/menu.php');
+    echo "Вы авторизованы!";
+}
+else {
+    echo "УХАДИ!";
+}
 ?>
 </body>
 </html>

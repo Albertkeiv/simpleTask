@@ -18,6 +18,6 @@ $_COOKIE['user'] = $user;
 
 $mysqli->close();                                                                   // Закрытие соединения c БД     
 
-header("Location: /main.php");
+header("Location: /team.php");
 ?>
                                                
