@@ -9,10 +9,9 @@
 <?php
 if (!empty($_COOKIE['user'])) {
     include('template/menu.php');
-    echo "Вы авторизованы!";
 }
 else {
-    echo "УХАДИ!";
+    header("Location: ../non-auth.html");
 }
 ?>
 </body>

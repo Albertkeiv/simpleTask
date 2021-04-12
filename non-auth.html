@@ -6,14 +6,9 @@
 <title>SimpleAgile</title> 
 </head>
 <body>
-<?php
-if (!empty($_COOKIE['user'])) {
-    include('../template/menu.php');
-    echo "Вы авторизованы!";
-}
-else {
-    header("Location: ../non-auth.html");
-}
-?>
+    <div class="text-center container-sm w-100 p-3"><p></p></div>
+    <div class="alert alert-danger text-center container-sm" role="alert">
+        Для просмотра той страницы требуется авторизоваться!
+    </div>
 </body>
 </html>
