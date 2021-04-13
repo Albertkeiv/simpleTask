@@ -5,7 +5,7 @@
                 <a class="nav-link <?php if ($_SERVER['SCRIPT_NAME']=="/team.php") echo "active"; ?>" aria-current="page" href="/team.php">Команды</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?php if ($_SERVER['SCRIPT_NAME']=="/php-scripts/temp.php") echo "active"; ?>" aria-current="page" href="/php-scripts/temp.php">Second</a>
+                <a class="nav-link <?php if ($_SERVER['SCRIPT_NAME']=="/php-scripts/temp.php") echo "active"; ?>" aria-current="page" href="/php-scripts/temp.php">Тест</a>
             </li>
         </ul>
         <span class="navbar-text">Привет, <?php echo $_COOKIE['user']; ?>! </span>

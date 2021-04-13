@@ -9,6 +9,7 @@
 <?php
 if (!empty($_COOKIE['user'])) {
     include('template/menu.php');
+    include('template/teams.php'); 
 }
 else {
     header("Location: ../non-auth.html");
