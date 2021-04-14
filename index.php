@@ -6,6 +6,11 @@
 <title>Login</title> 
 </head>
 <body>
+<?php
+if (!empty($_COOKIE['user'])) {
+    header("Location: /team.php");
+}
+?>
 <div class="container-sm">
     <div class="row">
         <div class="col">
