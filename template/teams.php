@@ -6,9 +6,9 @@
     $res_check = $mysqli->query($query);
     $res_team = $mysqli->query($query);
     $mysqli->close();
-?> 
+?>
 
-<div class="container d-flex flex-wrap"> 
+<div class="container d-flex flex-wrap">
 
 <?php
     $check = $res_check->fetch_row();
@@ -16,8 +16,9 @@
         include ("no-team_card.html");
     } else {
         while($team = $res_team->fetch_assoc()) {
-            include("card.php");       
+            include("card.php");
         }
     }
 ?>
+<div> TEST </div>
 </div>
